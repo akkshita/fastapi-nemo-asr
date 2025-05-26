@@ -151,3 +151,17 @@ curl -X POST "http://localhost:8000/transcribe" \
 4. **Error Handling**: Comprehensive error handling with appropriate HTTP status codes and error messages.
 5. **Docker Optimization**: The Dockerfile is optimized for smaller image size using a slim base image and multi-stage builds.
 6. **Resource Management**: Temporary files are properly cleaned up after processing.
+
+## Limitations
+
+1. **Model Accuracy**: May struggle with accents, background noise, and domain-specific jargon.
+
+2. **File Size and Processing Time**: Large audio files may result in slower processing or timeouts. Transcription may take time for longer audio files.
+
+3. **Concurrency**: Limited scalability for high-traffic scenarios.
+
+4. **Language Support**: Primarily optimized for English; may not perform well on other languages or accents.
+
+5. **Security**: No built-in security features; file validation and access control must be implemented.
+
+
